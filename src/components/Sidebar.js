@@ -42,7 +42,7 @@ function Sidebar() {
     });
 
     function getRooms() {
-        fetch("http://localhost:5001/rooms")
+        fetch("https://mern-pankchat0507-server.onrender.com/rooms")
             .then((res) => res.json())
             .then((data) => setRooms(data));
     }
